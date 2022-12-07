@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 .main-fon
 {
-    background-image: url(./img/fon.svg);
+    background-image: url(../img/fon.svg);
     background-size: cover;
     background-attachment: fixed;
     height: 900px;
@@ -94,7 +94,10 @@ header
 .title
 {
     font-size: 24px;
+    display: block;
+    z-index: 3;
 }
+
 .main-name
 {
     padding-top: 25px;
@@ -114,6 +117,16 @@ header
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
 }
+
+.main-title
+{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
 .about-block
 {
     display: flex;
@@ -244,7 +257,7 @@ header
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .title-discription-block
 {
@@ -267,4 +280,69 @@ header
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.haw-work-block
+{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px 180px 0px 180px;
+}
+.main-title-h
+{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+.haw-work-block-dis
+{
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    margin-left: 40px;
+}
+@media (min-width: 350px) and (max-width: 1000px) {
+    .haw-work-block {
+     display: none;
+    }
+    .main-title-h
+    {
+     display: none;
+    }
+}
+
+.footer
+{
+    background-image: url(/img/123.png);
+    background-size:cover;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.footer-text-one
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    width: 363px;
+}
+
+
+
+.footer-text-three
+{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: right;
+    margin-left: auto;
+    color: #FFFFFF;
+    width: 363px;
+    padding-top: 70px;
+    position: relative;
 }
