@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 .main-fon
 {
-    background-image: url(/img/fon.svg);
+    background-image: url(./img/fon.svg);
     background-size: cover;
     background-attachment: fixed;
     height: 900px;
