@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Raleway:wght@400;700;800&display=swap');
+
 *
 {
     margin: 0 0 0;
+
 }
 body::-webkit-scrollbar {
     width: 0.1em;
@@ -29,6 +31,15 @@ body::-webkit-scrollbar {
     background-attachment: fixed;
     height: 900px;
 }
+.main-fon-r
+{
+    background-image: url(../img/fon.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+
+}
+
 .about-block
 {
     height: 500px;
@@ -42,6 +53,7 @@ header
     position: fixed;
     background-color: #080808f0;
     display: flex;
+    justify-content: space-between;
 }
 .header-buttons
 {
@@ -172,7 +184,6 @@ header
 }
 .card:hover{
     box-shadow: 0px 0px 10px 1px #8226ad89;
-
 }
 
 .card-teg
@@ -241,7 +252,6 @@ header
     height: 57px;
     text-align: center;
     align-items: center;
-
 }
 .card-butoom p{
     padding-left: 10px;
@@ -315,12 +325,13 @@ header
 
 .footer
 {
-    background-image: url(/img/123.png);
+    background-image: url(../img/123.png);
     background-size:cover;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 130px;
     padding-bottom: 50px;
+
 }
 
 .footer-text-one
@@ -331,8 +342,6 @@ header
     line-height: 30px;
     width: 363px;
 }
-
-
 
 .footer-text-three
 {
@@ -346,3 +355,534 @@ header
     padding-top: 70px;
     position: relative;
 }
+
+.main-form-verificat
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 130px; 
+}
+.main-form-verificat-l
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 130px; 
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+    width: 43%;
+    padding-top: 70px;
+    margin-right: 60px;
+
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:18px;
+	color:#fff;	
+    padding-top: 65px;
+    padding-left: 10px;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid rgb(255, 255, 255);  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  color:#fff;
+}
+.input-container input:focus{ 
+  border:none;	
+  outline:none;
+  border-bottom:2px solid #6a6a6a;	
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+    top:-14px;
+	font-size:14px;
+}
+
+.input-container2{
+	position:relative;
+	margin-bottom:25px;
+    width: 100%;
+    padding-top: 70px;
+    margin-right: 60px;
+
+}
+.input-container2 label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:18px;
+	color:#fff;	
+    padding-top: 65px;
+    padding-left: 10px;
+	transition: all 0.5s ease-in-out;
+}
+.input-container2 input{ 
+  border:0;
+  border-bottom:1px solid rgb(255, 255, 255);  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  color:#fff;
+}
+.input-container2 input:focus{ 
+  border:none;	
+  outline:none;
+  border-bottom:2px solid #6a6a6a;	
+}
+.input-container2 input:focus ~ label,
+.input-container2 input:valid ~ label{
+    top:-14px;
+	font-size:14px;
+}
+
+
+.input-container textarea{ 
+  border:0;
+  border-bottom:1px solid rgb(255, 255, 255);  
+  background:transparent;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size:16px;
+
+  padding:8px 0 5px 0;
+
+  color:#fff;
+}
+.input-container textarea:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:2px solid #6a6a6a;	
+}
+.input-container textarea:focus ~ label,
+.input-container textarea:valid ~ label{
+	top:-14px;
+	font-size:14px;
+}
+.verificat-button
+{
+    outline: none;
+    display: block;
+    width:38%;
+    border-style: 1px solid;
+    border-color: #ffffff82;
+    background-color: transparent;
+    border-top: 1px solid rgba(165, 165, 165, 0.401);
+    height: 63px;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.verificat-button:hover
+{
+    box-shadow: 0px 0px 10px 1px #7b00c2c3;
+}
+.verificat-button-text
+{
+   color:white;
+   display: block;
+   margin-bottom: auto;
+   margin-top: auto;
+   font-size: 18px;
+   line-height: 38px;
+   font-weight: 700;
+}
+.erorr-message
+{
+    color:rgb(163, 2, 2);
+}
+.link 
+{
+    text-decoration:none;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+@media (min-width: 350px) and (max-width: 1000px) {
+    .main-form-verificat
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .input-container{
+        
+        margin-right: 0px;
+    }
+}
+
+
+
+
+.logo
+{
+    display: block;
+  
+}
+.menu
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+   
+}
+
+.navigate
+{
+    font-size: 13px;
+    display: block;
+    margin-left: 120px;
+    margin-top: 20px;
+    color:white;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.line
+{
+    display: block;
+    height: 3px;
+    width: 320px ;
+    color: white;
+}
+
+.conteiner-coures
+{
+    display: flex;
+    width: auto;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+  
+}
+
+.course-img
+{
+   display: inline;
+   width: 600px;
+   
+}
+
+.course-title
+{
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    color:white;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+
+}
+.course-title-dis
+{
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    color:white;
+    position: relative;
+    bottom: 20px;
+    margin-left: 60px;
+    font-family: 'Montserrat', sans-serif;
+ 
+
+}
+
+.course-discriotion
+{
+    display: inline;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-left: 40px;
+    
+}
+
+.course-dis-discription
+{
+    display: block;
+    margin-right: 50px;
+    font-weight: 100;
+    font-size: 14px;
+    color:rgb(192, 192, 192);
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course-next-line
+{
+    display: block;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.course-dis-link
+{
+    display: block;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-line: underline;
+    font-size: 18px;
+}
+
+.header-line
+{
+    height: 1px;
+    width: auto;
+    display: block;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 40px;
+    background-color: rgb(107, 107, 107);
+}
+
+.conteiner
+{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.text-title
+{
+    font-weight: 300;
+    font-size: 28px;
+    color: white;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+
+.picture-profile
+{
+    display: inline;
+    width: 320px;
+    height: 280px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.dis-part
+{
+    display: inline;
+    margin-left: 50px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.dis-text
+{
+    display: block;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course-main-picture
+{
+    width: auto;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-image: url(../img/testp.png);
+    background-size:cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+.course-next
+{
+    display: block;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.course-next img{
+    width: 7%;
+    display: block;
+
+    margin-left: auto;
+}
+
+.link
+{
+    margin-right: 130px;
+}
+.button-child
+{
+    margin-top: 100px;
+}
+
+.input-container1
+{
+	position:relative;
+	margin-bottom:25px;
+    width: 500px;
+    font-family: 'Geometria', sans-serif;
+    padding-top: 70px;
+
+   z-index: 9999;
+}
+.input-container1 label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:20px;
+	color:#fff;	
+    padding-top: 65px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+	transition: all 0.5s ease-in-out;
+}
+.input-container1 input{ 
+  border:0;
+
+  border-bottom:1px solid rgb(255, 255, 255);  
+  background:transparent;
+  width:400px;
+  
+  padding:8px 0 5px 0;
+  font-size:14px;
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.input-container1 input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:2px solid #6a6a6a;	
+}
+
+.input-container1 input:focus ~ label,
+.input-container1 input:valid ~ label{
+	top:-14px;
+	font-size:14px;
+	
+}
+
+.input-mark
+{
+    margin-left: 30px;
+}
+
+@media (min-width: 350px) and (max-width: 1000px) {
+    .course-img
+    {
+       display: none;
+       width: 0px;
+    }
+}
+.before-course
+{
+    padding-top: 100px;
+}
+
+.hed
+{
+   position: relative;
+   right: 60px;
+}
+
+.course-bar
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+}
+.course-point
+{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    margin-right: 20px;
+    border: 1px solid #dbdbdb;
+}
+.course-point img{
+    display: block;
+    margin: auto auto;
+    margin-top: 7px;
+}
+.acrive
+{
+    background-color: #4B9314;
+}
+
+.conteiner-red
+{
+    margin-left: 140px;
+    margin-right: 120px;
+    padding-top: 40px;
+    display: flex;
+}
+
+.main-theme-black_menu
+{
+    color:white;
+
+    background: url(/img/fon.png);
+    background-size: cover;
+}
+
+.menu-list
+{
+    
+    list-style-type: none;
+    padding-left: 120px;
+    
+}
+
+.menu-list li
+{
+    
+  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-top:70px ;
+
+
+    
+}
+
+a {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    color: rgb(255, 255, 255); 
+
+   } 
+  a:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: rgb(255, 255, 255); 
+   }
+   
